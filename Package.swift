@@ -10,7 +10,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/skiptools/skip.git", from: "1.9.6"),
-        .package(url: "https://github.com/skiptools/skip-foundation.git", from: "1.4.3"),
+        .package(url: "https://github.com/Ceylo/skip-foundation.git", branch: "android"),
     ],
     targets: [
         .target(name: "SkipModel", dependencies: [.product(name: "SkipFoundation", package: "skip-foundation")], plugins: [.plugin(name: "skipstone", package: "skip")]),
